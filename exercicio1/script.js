@@ -14,10 +14,12 @@ console.log(numDigitado)
 //     console.log("Número não divisível por 3")
 
 
-    if (numDigitado % 2 === 0 && !numDigitado % 3 === 0){
-        console.log ("Número divisível por 2")
+    if (numDigitado % 2 === 0 && numDigitado % 3 === 0){
+        console.log ("Número divisível por 2 e 3")
 
-    }else if (!numDigitado % 2 === 0 && numDigitado % 3 === 0){
+    }else if (numDigitado % 2 === 0 && !numDigitado % 3 === 0){
+        console.log ("Número divisível por 2")
+    }else if(!numDigitado % 2 === 0 && numDigitado % 3 === 0){
         console.log ("Número divisível por 3")
-    }else
+}else
         console.log ("Número não divisível por 2 e 3")
